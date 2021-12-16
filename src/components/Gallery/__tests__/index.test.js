@@ -17,12 +17,12 @@ describe('Gallery is rendering', () => {
   it('matches snapshot', () => {
     const { asFragment } = render(<Gallery currentCategory={portrait} />)
     expect(asFragment()).toMatchSnapshot()
-  })
+  });
 
   //h1 titled correctly
   it('renders', () => {
     const { getByTestId } = render(<Gallery currentCategory={portrait} />)
     expect(getByTestId('h1tag')).toHaveTextContent('Portraits')
-  })
-})
+  });
+});
 
